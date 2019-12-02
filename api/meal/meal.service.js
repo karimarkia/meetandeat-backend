@@ -67,6 +67,8 @@ async function update(meal) {
             //delete meal._id
         const { _id, ...mealData } = meal
         const id = ObjectId(_id)
+        console.log(id);
+
         return await collection.updateOne({ _id: id }, { $set: mealData })
             //return await collection.updateOne({_id}, {$set : meal}) 
             // bug here 
