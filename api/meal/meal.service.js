@@ -1,5 +1,5 @@
 // const dbService = require('./db.service')
-const dbService = require('./dbService')
+const dbService = require('../../services/dbService')
 const ObjectId = require('mongodb').ObjectId
 
 
@@ -19,7 +19,7 @@ async function query(filterBy = {}) {
         criteria.name = filterBy.txt
     }
     if (filterBy.minBalance) {
-        criteria.balance = {$gte : filterBy.minBalance}
+        criteria.balance = { $gte: filterBy.minBalance }
     }
     const collection = await dbService.getCollection('meals')
     try {
@@ -34,10 +34,10 @@ async function query(filterBy = {}) {
 
 async function getById(mealId) {
     // console.log(mealId);
-    
+
     const collection = await dbService.getCollection('meals')
     try {
-        const meal = await collection.findOne({"_id":ObjectId(mealId)})
+        const meal = await collection.findOne({ "_id": ObjectId(mealId) })
         return meal
     } catch (err) {
         console.log(`ERROR: cannot find customer ${mealId}`)
@@ -48,10 +48,10 @@ async function getById(mealId) {
 
 async function remove(mealId) {
     // console.log(customerId);
-    
+
     const collection = await dbService.getCollection('meals')
     try {
-        return await collection.deleteOne({"_id":ObjectId(mealId)})
+        return await collection.deleteOne({ "_id": ObjectId(mealId) })
     } catch (err) {
         console.log(`ERROR: cannot remove customer ${mealId}`)
         throw err;
@@ -60,12 +60,12 @@ async function remove(mealId) {
 
 async function update(meal) {
     console.log(meal._id);
-    
+
     const collection = await dbService.getCollection('meals')
-    // const id = meal._id;
-    // delete meal._id;
+        // const id = meal._id;
+        // delete meal._id;
     try {
-        await collection.updateOne({"_id":ObjectId(meal._id)}, {$set : meal})
+        await collection.updateOne({ "_id": ObjectId(meal._id) }, { $set: meal })
         return meal
     } catch (err) {
         console.log(`ERROR: cannot update customer ${meal._id}`)
