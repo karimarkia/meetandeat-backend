@@ -21,7 +21,7 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false }
 }))
-
+  
 if (process.env.NODE_ENV !== 'production') {
     const corsOptions = {
         origin: 'http://localhost:8080',
