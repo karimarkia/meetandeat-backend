@@ -53,25 +53,29 @@ async function remove(mealId) {
     try {
         return await collection.deleteOne({ "_id": ObjectId(mealId) })
     } catch (err) {
-        console.log(`ERROR: cannot remove customer ${mealId}`)
+        console.log(`ERROR: cannot remove meal ${mealId}`)
         throw err;
     }
 }
 
 async function update(meal) {
-    console.log(meal._id);
-
+    console.log('backend update service id:', meal._id);
     const collection = await dbService.getCollection('meals')
-        // const id = meal._id;
-        // delete meal._id;
     try {
-        await collection.updateOne({ "_id": ObjectId(meal._id) }, { $set: meal })
-        return meal
+        const strMealId = meal._id
+            //const _id = ObjectId(strMealId)
+            //delete meal._id
+        const { _id, ...mealData } = meal
+        const id = ObjectId(_id)
+        return await collection.updateOne({ _id: id }, { $set: mealData })
+            //return await collection.updateOne({_id}, {$set : meal}) 
+            // bug here 
     } catch (err) {
-        console.log(`ERROR: cannot update customer ${meal._id}`)
+        console.log(`ERROR: cannot update meal ${meal._id}`)
         throw err;
     }
 }
+
 
 async function add(meal) {
     const collection = await dbService.getCollection('meals')
@@ -79,7 +83,7 @@ async function add(meal) {
         await collection.insertOne(meal);
         return meal;
     } catch (err) {
-        console.log(`ERROR: cannot insert customer`)
+        console.log(`ERROR: cannot insert meal`)
         throw err;
     }
 }
