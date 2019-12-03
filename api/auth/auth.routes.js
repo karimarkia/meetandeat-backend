@@ -8,6 +8,5 @@ router.post('/login', login)
 router.post('/signup', signup)
 router.post('/logout', requireAuth, logout)
 
-// console.log();
 
 module.exports = router
