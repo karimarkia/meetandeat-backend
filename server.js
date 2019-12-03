@@ -15,6 +15,11 @@ const app = express()
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
+var http = require('http').createServer(app);
+var io = require('socket.io')(http);
+
+let userCount = 0;
+
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -32,7 +37,7 @@ if (process.env.NODE_ENV !== 'production') {
         credentials: true
     };
     app.use(cors(corsOptions));
-}
+} 
 
 // routes
 app.use('/api/auth', authRoutes)
