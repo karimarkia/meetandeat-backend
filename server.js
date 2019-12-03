@@ -6,8 +6,8 @@ const path = require('path')
 const config = require('./config')
 const session = require('express-session')
 
-// const authRoutes = require('./api/auth/auth.routes')
-// const accountRoutes = require('./api/account/account.routes')
+const authRoutes = require('./api/auth/auth.routes')
+const userRoutes = require('./api/user/user.routes')
 const mealRoutes = require('./api/meal/meal.routes')
 
 const app = express()
@@ -26,8 +26,7 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false }
 }))
-
-
+  
 if (process.env.NODE_ENV !== 'production') {
     const corsOptions = {
         origin: 'http://localhost:8080',
@@ -38,8 +37,8 @@ if (process.env.NODE_ENV !== 'production') {
 } 
 
 // routes
-// app.use('/auth', authRoutes)
-// app.use('/account', accountRoutes)
+app.use('/api/auth', authRoutes)
+app.use('/api/user', userRoutes)
 app.use('/api/meal', mealRoutes)
 
 // if (process.env.NODE_ENV === 'production') {
