@@ -21,7 +21,7 @@ function connectSockets(io) {
         //     io.emit('saying to all', data)
         // })
         socket.on('created', data=>{
-            console.log(data,'counter up')
+            // console.log(data,'counter up')
             io.emit('inc counter', data)
         })
 
