@@ -6,18 +6,18 @@ const path = require('path')
 const config = require('./config')
 const session = require('express-session')
 
-const authRoutes = require('./api/auth/auth.routes')
-const userRoutes = require('./api/user/user.routes')
-const mealRoutes = require('./api/meal/meal.routes')
-const connectSockets = require('./api/socket/socket.routes')
 
 const app = express()
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
 
+const authRoutes = require('./api/auth/auth.routes')
+const userRoutes = require('./api/user/user.routes')
+const mealRoutes = require('./api/meal/meal.routes')
+const connectSockets = require('./api/socket/socket.routes')
 
-let userCount = 0;
+
 
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: false }));

@@ -2,7 +2,6 @@ const mealService = require('./meal.service.js')
 
 //GET LIST MEALS
 async function getMeals(req, res) {
-    console.log('getting meals')
     let filterBy = req.body
     const meals = await mealService.query(filterBy)
     res.json(meals)
