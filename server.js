@@ -47,11 +47,11 @@ app.use('/api/user', userRoutes)
 app.use('/api/meal', mealRoutes)
 connectSockets(io)
 
-// if (process.env.NODE_ENV === 'production') {
-app.use(express.static(path.resolve(__dirname, 'public')));
-// }
-const logger = require('./services/logger.service')
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.resolve(__dirname, 'public')));
+}
 
+const logger = require('./services/logger.service')
 const port = process.env.PORT || 3000;
 http.listen(port, () => {
     logger.info('Server is running on port: ' + port)
