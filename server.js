@@ -15,8 +15,7 @@ const app = express()
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
-var http = require('http').createServer(app);
-var io = require('socket.io')(http);
+
 
 let userCount = 0;
 
@@ -29,7 +28,7 @@ app.use(session({
     saveUninitialized: true,
     cookie: { secure: false }
 }))
-  
+
 if (process.env.NODE_ENV !== 'production') {
     const corsOptions = {
         origin: 'http://localhost:8080',
@@ -37,7 +36,7 @@ if (process.env.NODE_ENV !== 'production') {
         credentials: true
     };
     app.use(cors(corsOptions));
-} 
+}
 
 // routes
 app.use('/api/auth', authRoutes)
