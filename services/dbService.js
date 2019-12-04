@@ -2,12 +2,13 @@
 const MongoClient = require('mongodb').MongoClient;
 
 // Connection URL
-const url =  'mongodb+srv://artyomP1:Art13579@cluster0-hkrir.mongodb.net/test?retryWrites=true&w=majority' 
-    // : 'mongodb://localhost:27017';
-// const url = (true && process.env.NODE_ENV === 'production')
-//     'mongodb+srv://artyomP1:Art13579@cluster0-hkrir.mongodb.net/test?retryWrites=true&w=majority' 
-//     // : 'mongodb://localhost:27017';
+const url = 'mongodb+srv://artyomP1:Art13579@cluster0-hkrir.mongodb.net/test?retryWrites=true&w=majority' 
     
+    // const url = (true && process.env.NODE_ENV === 'production')? 
+    // 'mongodb+srv://artyomP1:Art13579@cluster0-hkrir.mongodb.net/test?retryWrites=true&w=majority' 
+    // : 'mongodb://localhost:27017';
+    
+
 // Database Name
 const dbName = 'MEAL_DB';
 
