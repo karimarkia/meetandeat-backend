@@ -6,7 +6,6 @@ const path = require('path')
 const config = require('./config')
 const session = require('express-session')
 
-
 const app = express()
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
@@ -20,13 +19,17 @@ const connectSockets = require('./api/socket/socket.routes')
 
 
 app.use(cookieParser())
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+    extended: false
+}));
 app.use(bodyParser.json());
 app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false }
+    cookie: {
+        secure: false
+    }
 }))
 
 // if (process.env.NODE_ENV !== 'production') {
@@ -60,6 +63,7 @@ connectSockets(io)
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.resolve(__dirname, 'public')));
 }
+
 const logger = require('./services/logger.service')
 const port = process.env.PORT || 3000;
 http.listen(port, () => {
