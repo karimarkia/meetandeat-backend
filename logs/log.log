@@ -138,3 +138,5 @@ DEBUG - auth.service - login with username: mechela
 DEBUG - auth.service - login with username: michela
 INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
+
+INFO - Server is running on port: 3000
