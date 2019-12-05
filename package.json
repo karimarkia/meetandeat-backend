@@ -4,7 +4,8 @@
     "description": "production ready server",
     "scripts": {
         "server:dev": "SET NODE_ENV=development && nodemon app.js",
-        "server:prod": "node app.js"
+        "server:prod": "node app.js",
+        "start": "node server.js"
     },
     "author": "moshe pinhasi",
     "license": "ISC",
