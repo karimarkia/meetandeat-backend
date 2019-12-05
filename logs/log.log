@@ -276,3 +276,16 @@ DEBUG - auth.service - login with username: nichela
 DEBUG - auth.service - login with username: michela
 INFO - Server is running on port: 3000
 DEBUG - auth.service - login with username: michela
+DEBUG - Ruben@gmail, Ruben, 12345+ [object Object], Male, 350690400000, Ruben+ undefined
+DEBUG - auth.service - signup with email: Ruben@gmail, username: Ruben
+DEBUG - auth.route - new account created: {"email":"Ruben@gmail","password":"$2b$10$XG1b9pBJ4S7Bu.tduCg5se8F4HOTkB2O5YW.g1L/DVo1PxsIUmMdy","username":"Ruben","location":{"country":"Italy","city":"milano"},"gender":"Male","birthDay":350690400000,"fullname":"Ruben","_id":"5de8d16920903636a48a6c46"}
+DEBUG - auth.service - login with username: Ruben
+DEBUG - auth.service - login with username: Ruben
+DEBUG - Carlotta@gmail.com, Carlotta, 12345+ [object Object], Female, 792712800000, Carlotta+ http://res.cloudinary.com/artyompogosov/image/upload/v1575540750/b9hfttc9lnwt95jfqotj.jpg
+DEBUG - auth.service - signup with email: Carlotta@gmail.com, username: Carlotta
+DEBUG - auth.route - new account created: {"email":"Carlotta@gmail.com","password":"$2b$10$YclV6W3/4L6fyVn55QiZOOQnDsnlHdpSRl4JKfJoV5XGz8P4qM9P2","username":"Carlotta","location":{"country":"italy","city":"rome"},"gender":"Female","birthDay":792712800000,"fullname":"Carlotta","imgUrl":"http://res.cloudinary.com/artyompogosov/image/upload/v1575540750/b9hfttc9lnwt95jfqotj.jpg","_id":"5de8d81020903636a48a6c47"}
+DEBUG - auth.service - login with username: Carlotta
+DEBUG - Francesca@gmail.com, Francesca, 12345+ [object Object], Female, 837032400000, Francesca Romana+ http://res.cloudinary.com/artyompogosov/image/upload/v1575541421/abezhwkufybohtu1tnqo.jpg
+DEBUG - auth.service - signup with email: Francesca@gmail.com, username: Francesca
+DEBUG - auth.route - new account created: {"email":"Francesca@gmail.com","password":"$2b$10$0mj6NPlQlMXzWX2vEaAyr.32Yrd2W6XiBFrsnX7lzxZApqq9149OO","username":"Francesca","location":{"country":"Italy","city":"Milan"},"gender":"Female","birthDay":837032400000,"fullname":"Francesca Romana","imgUrl":"http://res.cloudinary.com/artyompogosov/image/upload/v1575541421/abezhwkufybohtu1tnqo.jpg","_id":"5de8dab520903636a48a6c48"}
+DEBUG - auth.service - login with username: Francesca
