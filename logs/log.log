@@ -326,3 +326,6 @@ INFO - Server is running on port: 3000
 INFO - no logged in user
 DEBUG - auth.service - login with username: Or
 
+
+INFO - Server is running on port: 3000
+DEBUG - auth.service - login with username: karim
