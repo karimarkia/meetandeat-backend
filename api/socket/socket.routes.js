@@ -12,7 +12,7 @@ function connectSockets(io) {
             io.emit('inc counter', data)
         })
         socket.on('is typing', data=>{
-            io.emit('print', data)
+            io.brodcast.emit('print', data)
         })
 
 
