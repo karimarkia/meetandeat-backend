@@ -1,4 +1,3 @@
-// const dbService = require('./db.service')
 const dbService = require('../../services/dbService')
 const ObjectId = require('mongodb').ObjectId
 
@@ -33,8 +32,6 @@ async function query(filterBy = {}) {
 
 
 async function getById(mealId) {
-    // console.log(mealId);
-
     const collection = await dbService.getCollection('meals')
     try {
         const meal = await collection.findOne({ "_id": ObjectId(mealId) })
@@ -63,15 +60,9 @@ async function update(meal) {
     const collection = await dbService.getCollection('meals')
     try {
         const strMealId = meal._id
-            //const _id = ObjectId(strMealId)
-            //delete meal._id
         const { _id, ...mealData } = meal
         const id = ObjectId(_id)
-        console.log(id);
-
         return await collection.updateOne({ _id: id }, { $set: mealData })
-            //return await collection.updateOne({_id}, {$set : meal}) 
-            // bug here 
     } catch (err) {
         console.log(`ERROR: cannot update meal ${meal._id}`)
         throw err;

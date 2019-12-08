@@ -9,10 +9,8 @@ module.exports = {
 }
 
 async function query(filterBy = {}) {
-    // const criteria = _buildCriteria(filterBy)
     const collection = await dbService.getCollection('reviews')
     try {
-        // const reviews = await collection.find(criteria).toArray();
         var reviews = await collection.aggregate([{
                 $match: filterBy
             },

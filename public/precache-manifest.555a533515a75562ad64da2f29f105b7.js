@@ -1,15 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-<<<<<<< HEAD:public/precache-manifest.cedaad290c7779660a2ecd7ec8469450.js
-    "revision": "d1098910b98fee7f05eb",
-    "url": "/css/app.265a072a.css"
-=======
-    "revision": "a6355fdda99a3499c1b2",
-    "url": "/css/app.12760819.css"
->>>>>>> 9dcb8e6725d7afdd1f80b547f4f41e88e26db607:public/precache-manifest.55b1133d2e2f4b2a9c6ba00b72ae05ca.js
+    "revision": "7cd402d5b0bde599d590",
+    "url": "/css/app.fd1a006d.css"
   },
   {
-    "revision": "aec6f3bf0efbc9d6909b",
+    "revision": "3020d560a0e16c1bad70",
     "url": "/css/chunk-vendors.6bd32be9.css"
   },
   {
@@ -25,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fonts/Caveat-Regular.b20ff458.ttf"
   },
   {
-    "revision": "b02046ea5d95923dac12259900739f6b",
-    "url": "/fonts/PetitFormalScript-Regular.b02046ea.ttf"
+    "revision": "411051cb61bcda5517943601e8734cea",
+    "url": "/fonts/Monoton-Regular.411051cb.ttf"
   },
   {
     "revision": "535877f50039c0cb49a6196a5b7517cd",
@@ -65,25 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/logo.6762543a.png"
   },
   {
-<<<<<<< HEAD:public/precache-manifest.cedaad290c7779660a2ecd7ec8469450.js
-    "revision": "6e8f2192949ca7ef18a88b9fc9387ff5",
+    "revision": "009b2c2b667ee277e67c34ea53b6c76d",
     "url": "/index.html"
   },
   {
-    "revision": "d1098910b98fee7f05eb",
-    "url": "/js/app.04dd3bf2.js"
-=======
-    "revision": "1b26f81b250a0d863a9488625d57adff",
-    "url": "/index.html"
+    "revision": "7cd402d5b0bde599d590",
+    "url": "/js/app.38b5d4ff.js"
   },
   {
-    "revision": "a6355fdda99a3499c1b2",
-    "url": "/js/app.7825ec7c.js"
->>>>>>> 9dcb8e6725d7afdd1f80b547f4f41e88e26db607:public/precache-manifest.55b1133d2e2f4b2a9c6ba00b72ae05ca.js
-  },
-  {
-    "revision": "aec6f3bf0efbc9d6909b",
-    "url": "/js/chunk-vendors.da8fb918.js"
+    "revision": "3020d560a0e16c1bad70",
+    "url": "/js/chunk-vendors.20887f5a.js"
   },
   {
     "revision": "5fd514f1c2823f7d1eb3a41435b65b54",
