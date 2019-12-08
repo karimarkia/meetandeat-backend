@@ -14,15 +14,15 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-    "/precache-manifest.cedaad290c7779660a2ecd7ec8469450.js"
+  "/precache-manifest.5727aafe09efa1550654b37b9b3a50df.js"
 );
 
-workbox.core.setCacheNameDetails({ prefix: "frontend" });
+workbox.core.setCacheNameDetails({prefix: "frontend"});
 
 self.addEventListener('message', (event) => {
-    if (event.data && event.data.type === 'SKIP_WAITING') {
-        self.skipWaiting();
-    }
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 /**
