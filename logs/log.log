@@ -136,7 +136,7 @@ INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
 DEBUG - auth.service - login with username: mechela
 DEBUG - auth.service - login with username: michela
-<<<<<<< HEAD
+
 DEBUG - auth.service - login with username: michela
 DEBUG - auth.service - login with username: micela
 DEBUG - auth.service - login with username: michela
@@ -166,7 +166,7 @@ DEBUG - auth.service - login with username: Francesca
 =======
 INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
->>>>>>> 9dcb8e6725d7afdd1f80b547f4f41e88e26db607
+
 
 DEBUG - auth.service - login with username: Amit
 DEBUG - auth.service - login with username: Amit
@@ -295,6 +295,10 @@ INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
+
+
+INFO - Server is running on port: 3000
+
 INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
 INFO - no logged in user
@@ -321,6 +325,7 @@ DEBUG - auth.service - login with username: Or
 INFO - Server is running on port: 3000
 INFO - no logged in user
 DEBUG - auth.service - login with username: Or
+<<<<<<< HEAD
 INFO - Server is running on port: 3000
 INFO - no logged in user
 DEBUG - auth.service - login with username: Or
@@ -360,3 +365,22 @@ DEBUG - auth.service - login with username: Dirk
 DEBUG - auth.service - login with username: Amit
 INFO - Server is running on port: 3000
 DEBUG - auth.service - login with username: Artyom
+=======
+
+
+INFO - Server is running on port: 3000
+DEBUG - auth.service - login with username: karim
+INFO - Server is running on port: 3000
+DEBUG - auth.service - login with username: Amit
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+DEBUG - auth.service - login with username: karim
+INFO - Server is running on port: 3000
+>>>>>>> b1f8abf793a17b7375c715fabe2b948593a64da5

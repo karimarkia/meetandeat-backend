@@ -9,6 +9,10 @@ function connectSockets(io) {
         socket.on('created', data => {
             io.emit('inc counter', data)
         })
+        socket.on('is typing', data => {
+            io.emit('print', data)
+        })
+
 
     })
 }
