@@ -1,6 +1,5 @@
 const mealService = require('./meal.service.js')
 
-
 async function getMeals(req, res) {
     let filterBy = req.body
     const meals = await mealService.query(filterBy)
@@ -8,24 +7,12 @@ async function getMeals(req, res) {
 
 }
 
-
 async function getMeal(req, res) {
     try {
         const meal = await mealService.getById(req.params._id)
         res.json(meal)
     } catch (err) {
         return res.status(404).send('Meal not found')
-    }
-}
-
-
-async function addMeal(req, res) {
-    const meal = req.body
-    try {
-        await mealService.add(meal)
-        res.json(meal)
-    } catch (err) {
-        return res.status(418).send('I am a teapot, and something went wrong with adding a new meal')
     }
 }
 
@@ -41,9 +28,7 @@ async function deleteMeal(req, res) {
 
 async function updateMeal(req, res) {
     const meal = req.body;
-    console.log(' banana 3', meal);
     try {
-
         await mealService.update(meal);
         console.log('banana 4: ', meal)
         return res.json(meal);
@@ -53,6 +38,15 @@ async function updateMeal(req, res) {
 }
 
 
+async function addMeal(req, res) {
+    const meal = req.body
+    try {
+        await mealService.add(meal)
+        res.json(meal)
+    } catch (err) {
+        return res.status(404).send('I am a teapot, and something went wrong with adding a new meal')
+    }
+}
 
 module.exports = {
     getMeals,

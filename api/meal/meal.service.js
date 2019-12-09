@@ -10,8 +10,6 @@ module.exports = {
     add
 }
 
-
-
 async function query(filterBy = {}) {
     const criteria = {};
     if (filterBy.txt) {

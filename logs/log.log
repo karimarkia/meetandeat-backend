@@ -340,3 +340,23 @@ INFO - Server is running on port: 3000
 INFO - no logged in user
 DEBUG - auth.service - login with username: Artyom
 DEBUG - auth.service - login with username: Artyom
+DEBUG - auth.service - login with username: Amit
+DEBUG - auth.service - login with username: Artyom
+DEBUG - auth.service - login with username: Amit
+DEBUG - Sharon@gmail.com, Sharon, 12345+ [object Object], Female, 634860000000, Sharon+ http://res.cloudinary.com/artyompogosov/image/upload/v1575805180/ry541tvee0ggqkit1skm.jpg
+DEBUG - auth.service - signup with email: Sharon@gmail.com, username: Sharon
+DEBUG - auth.route - new account created: {"email":"Sharon@gmail.com","password":"$2b$10$VQBUstTMBcODK86HbVO.Kuv/qzI4oXe05lBv6MxtLz4XyUpm1Ltu2","username":"Sharon","location":{"country":"Israel","city":"Tel aviv"},"gender":"Female","birthDay":634860000000,"fullname":"Sharon","imgUrl":"http://res.cloudinary.com/artyompogosov/image/upload/v1575805180/ry541tvee0ggqkit1skm.jpg","_id":"5dece100ea49d40e882f83a7"}
+DEBUG - auth.service - login with username: Sharon
+DEBUG - auth.service - login with username: Yonit
+DEBUG - auth.service - login with username: Judy
+DEBUG - auth.service - login with username: Kathryne
+DEBUG - auth.service - login with username: Amit
+DEBUG - auth.service - login with username: Sharon
+DEBUG - auth.service - login with username: Artyom
+DEBUG - auth.service - login with username: Or
+DEBUG - auth.service - login with username: JESS
+DEBUG - auth.service - login with username: Amit
+DEBUG - auth.service - login with username: Dirk
+DEBUG - auth.service - login with username: Amit
+INFO - Server is running on port: 3000
+DEBUG - auth.service - login with username: Artyom
