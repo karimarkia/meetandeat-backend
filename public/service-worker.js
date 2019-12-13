@@ -17,12 +17,12 @@ importScripts(
   "/precache-manifest.3f8fd4c1f78884da9890a7d3846295b6.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "frontend"});
+workbox.core.setCacheNameDetails({ prefix: "frontend" });
 
 self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+        self.skipWaiting();
+    }
 });
 
 /**

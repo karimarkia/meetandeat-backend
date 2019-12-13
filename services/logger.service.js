@@ -11,24 +11,24 @@ function timeFormatFn() {
     return now.toUTCString();
 }
 
-function doLog(message, level='DEBUG') {
-    const line = `${level} - ${message}` 
+function doLog(message, level = 'DEBUG') {
+    const line = `${level} - ${message}`
     const content = fs.readFileSync('./logs/log.log')
-    fs.writeFileSync('./logs/log.log',content + '\n' + line)
+    fs.writeFileSync('./logs/log.log', content + '\n' + line)
     console.log(line);
 }
 
 module.exports = {
-    debug(message, meta = ""){
-        doLog(message,"DEBUG")
+    debug(message, meta = "") {
+        doLog(message, "DEBUG")
     },
-    info(message, meta = ""){
-        doLog(message,"INFO")
+    info(message, meta = "") {
+        doLog(message, "INFO")
     },
-    warn(message, meta = ""){
-        doLog(message,"WARN")
+    warn(message, meta = "") {
+        doLog(message, "WARN")
     },
-    error(message, meta = ""){
-        doLog(message,"ERROR")
+    error(message, meta = "") {
+        doLog(message, "ERROR")
     }
 }

@@ -325,6 +325,47 @@ DEBUG - auth.service - login with username: Or
 INFO - Server is running on port: 3000
 INFO - no logged in user
 DEBUG - auth.service - login with username: Or
+<<<<<<< HEAD
+INFO - Server is running on port: 3000
+INFO - no logged in user
+DEBUG - auth.service - login with username: Or
+INFO - Server is running on port: 3000
+INFO - no logged in user
+DEBUG - artyom@gmail.com, Artyom, 12345+ [object Object], Male, 611355600000, artyom+ http://res.cloudinary.com/artyompogosov/image/upload/v1575739950/zo6f1iguy7yb83l2mebg.jpg
+DEBUG - auth.service - signup with email: artyom@gmail.com, username: Artyom
+DEBUG - auth.route - new account created: {"email":"artyom@gmail.com","password":"$2b$10$U7SL4DI/Ydl/W/19/Mpvj.6uZ/SHdidToCnzH.AmPLAcbAj4YgCPG","username":"Artyom","location":{"country":"Israel","city":"Tel aviv"},"gender":"Male","birthDay":611355600000,"fullname":"artyom","imgUrl":"http://res.cloudinary.com/artyompogosov/image/upload/v1575739950/zo6f1iguy7yb83l2mebg.jpg","_id":"5debe230df91704f80f79274"}
+DEBUG - auth.service - login with username: Artyom
+DEBUG - auth.service - login with username: Amit
+INFO - Server is running on port: 3000
+DEBUG - auth.service - login with username: Artyom
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+INFO - no logged in user
+INFO - Server is running on port: 3000
+INFO - no logged in user
+DEBUG - auth.service - login with username: Artyom
+DEBUG - auth.service - login with username: Artyom
+DEBUG - auth.service - login with username: Amit
+DEBUG - auth.service - login with username: Artyom
+DEBUG - auth.service - login with username: Amit
+DEBUG - Sharon@gmail.com, Sharon, 12345+ [object Object], Female, 634860000000, Sharon+ http://res.cloudinary.com/artyompogosov/image/upload/v1575805180/ry541tvee0ggqkit1skm.jpg
+DEBUG - auth.service - signup with email: Sharon@gmail.com, username: Sharon
+DEBUG - auth.route - new account created: {"email":"Sharon@gmail.com","password":"$2b$10$VQBUstTMBcODK86HbVO.Kuv/qzI4oXe05lBv6MxtLz4XyUpm1Ltu2","username":"Sharon","location":{"country":"Israel","city":"Tel aviv"},"gender":"Female","birthDay":634860000000,"fullname":"Sharon","imgUrl":"http://res.cloudinary.com/artyompogosov/image/upload/v1575805180/ry541tvee0ggqkit1skm.jpg","_id":"5dece100ea49d40e882f83a7"}
+DEBUG - auth.service - login with username: Sharon
+DEBUG - auth.service - login with username: Yonit
+DEBUG - auth.service - login with username: Judy
+DEBUG - auth.service - login with username: Kathryne
+DEBUG - auth.service - login with username: Amit
+DEBUG - auth.service - login with username: Sharon
+DEBUG - auth.service - login with username: Artyom
+DEBUG - auth.service - login with username: Or
+DEBUG - auth.service - login with username: JESS
+DEBUG - auth.service - login with username: Amit
+DEBUG - auth.service - login with username: Dirk
+DEBUG - auth.service - login with username: Amit
+INFO - Server is running on port: 3000
+DEBUG - auth.service - login with username: Artyom
+=======
 
 
 INFO - Server is running on port: 3000
@@ -342,7 +383,11 @@ INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
 DEBUG - auth.service - login with username: karim
 INFO - Server is running on port: 3000
+<<<<<<< HEAD
 INFO - Server is running on port: 3000
 DEBUG - auth.service - login with username: karim
 INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
+=======
+>>>>>>> b1f8abf793a17b7375c715fabe2b948593a64da5
+>>>>>>> 77d5978d4bfe8dffecd6ae4081e65e399727e182

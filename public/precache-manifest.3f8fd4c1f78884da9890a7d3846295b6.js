@@ -1,7 +1,17 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+<<<<<<< HEAD:public/precache-manifest.3f8fd4c1f78884da9890a7d3846295b6.js
     "revision": "d64c9ae64eba79a322c2",
     "url": "/css/app.0378815a.css"
+=======
+<<<<<<< HEAD:public/precache-manifest.4cdac30ad3f6feaef255b984e01f2ef4.js
+    "revision": "efadd9ed8cfc080b0c64",
+    "url": "/css/app.c88487c2.css"
+=======
+    "revision": "b9453f675100a022364c",
+    "url": "/css/app.0a408543.css"
+>>>>>>> b1f8abf793a17b7375c715fabe2b948593a64da5:public/precache-manifest.5727aafe09efa1550654b37b9b3a50df.js
+>>>>>>> 77d5978d4bfe8dffecd6ae4081e65e399727e182:public/precache-manifest.5727aafe09efa1550654b37b9b3a50df.js
   },
   {
     "revision": "3020d560a0e16c1bad70",
@@ -36,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/3.67812ba7.jpeg"
   },
   {
+    "revision": "4b003b43ed16e6be2420b6e90c9c52e2",
+    "url": "/img/4.4b003b43.jpeg"
+  },
+  {
     "revision": "b56b435116658f4521f1a9a16d482501",
     "url": "/img/customer-1.b56b4351.jpg"
   },
@@ -60,12 +74,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/logo.6762543a.png"
   },
   {
+<<<<<<< HEAD:public/precache-manifest.3f8fd4c1f78884da9890a7d3846295b6.js
     "revision": "57299f9df5994c629cd1d4f2f58eb77c",
     "url": "/index.html"
   },
   {
     "revision": "d64c9ae64eba79a322c2",
     "url": "/js/app.8f6d9399.js"
+
+ HEAD:public/precache-manifest.4cdac30ad3f6feaef255b984e01f2ef4.js
+    "revision": "0bee8dd4ec053c7cffbe5ac09ff18a5e",
+    "url": "/index.html"
+  },
+  {
+    "revision": "efadd9ed8cfc080b0c64",
+    "url": "/js/app.ec5c57f7.js"
+=======
+    "revision": "6ea2f548e694b7f45f03982fa82fb98a",
+    "url": "/index.html"
+  },
+  {
+    "revision": "b9453f675100a022364c",
+    "url": "/js/app.f58ef1e2.js"
+>>>>>>> b1f8abf793a17b7375c715fabe2b948593a64da5:public/precache-manifest.5727aafe09efa1550654b37b9b3a50df.js
+>>>>>>> 77d5978d4bfe8dffecd6ae4081e65e399727e182:public/precache-manifest.5727aafe09efa1550654b37b9b3a50df.js
   },
   {
     "revision": "3020d560a0e16c1bad70",
