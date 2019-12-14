@@ -20,7 +20,14 @@ async function query(filterBy = {}) {
     }
     const collection = await dbService.getCollection('meals')
     try {
-        const meals = await collection.find(criteria).toArray();
+        let meals = await collection.find(criteria).toArray();
+        meals = await meals.map(meal => {
+            if (meal.atDate < Date.now()) {
+                meal.atDate = Date.now() + 60000 * 60 * 24 * 2;
+                update(meal)
+            }
+            return meal
+        })
         return meals
     } catch (err) {
         console.log('ERROR: cannot find meals')
