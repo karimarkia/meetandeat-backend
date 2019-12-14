@@ -383,7 +383,14 @@ INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
 DEBUG - auth.service - login with username: karim
 INFO - Server is running on port: 3000
+<<<<<<< HEAD
+INFO - Server is running on port: 3000
+DEBUG - auth.service - login with username: karim
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
+=======
 >>>>>>> b1f8abf793a17b7375c715fabe2b948593a64da5
+<<<<<<< HEAD
 
 INFO - Server is running on port: 3000
 DEBUG - auth.service - login with username: Artyom
@@ -409,3 +416,9 @@ INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
 INFO - Server is running on port: 3000
 DEBUG - auth.service - login with username: Artyom
+=======
+>>>>>>> 77d5978d4bfe8dffecd6ae4081e65e399727e182
+>>>>>>> 7a37eb031df0b8fad0d565807044f470752facc8
+
+INFO - Server is running on port: 3000
+INFO - Server is running on port: 3000
